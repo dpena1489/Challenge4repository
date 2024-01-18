@@ -8,10 +8,12 @@ var ViewHighScoreEl = document.getElementById("view-high-scores")
 var listHighScoreEl = document.getElementById("high-score-list")
 var correctEl = document.getElementById("correct")
 var wrongEl = document.getElementById("wrong")
+
 //buttons
 var btnStartEl = document.querySelector("#start-game");
 var btnGoBackEl = document.querySelector("#go-back")
 var btnClearScoresEl = document.querySelector("#clear-high-scores")
+
 //questions/answers element
 var questionEl = document.getElementById("question")
 var answerbuttonsEl = document.getElementById("answer-buttons")
@@ -30,10 +32,7 @@ var ViewHighScoreEl = document.getElementById("view-high-scores")
 var listHighScoreEl = document.getElementById("high-score-list")
 var correctEl = document.getElementById("correct")
 var wrongEl = document.getElementById("wrong")
-//buttons
-var btnStartEl = document.querySelector("#start-game");
-var btnGoBackEl = document.querySelector("#go-back")
-var btnClearScoresEl = document.querySelector("#clear-high-scores")
+
 //questions/answers element
 var questionEl = document.getElementById("question")
 var answerbuttonsEl = document.getElementById("answer-buttons")
@@ -43,7 +42,7 @@ var timeleft;
 var gameover
 timerEl.innerText = 0;
 
-//High Score Array
+//high Score Array
 var HighScores = [];
 
 //assign array details for questions 
@@ -52,7 +51,7 @@ var QuestionIndex = 0
 
 
 
-// The array of questions for our quiz game
+//the array of questions for quiz game
 var questions = [
     {
         q: 'Arrays in Javascript can be used to store __________.',
@@ -113,7 +112,7 @@ var renderStartPage = function () {
     }
 }
 
-//every second, check if game-over is true, or if there is time left. Start time at 30. 
+//every second, check if game-over is true, or if there is time left. Then Start time at 30 
 var setTime = function () {
     timeleft = 30;
 
@@ -354,46 +353,6 @@ var arrayShuffledQuestions
 var QuestionIndex = 0
 
 
-
-// The array of questions for our quiz game
-var questions = [
-    {
-        q: 'Arrays in Javascript can be used to store __________.',
-        a: '4. all of the above',
-        choices: [{ choice: '1. numbers' }, { choice: '2. booleans' }, { choice: '3. strings' }, { choice: '4. all of the above' }]
-    },
-    {
-        q: 'Inside which HTML element do we put the javascript?',
-        a: '3. <script>',
-        choices: [{ choice: '1. <h1>' }, { choice: '2. <js>' }, { choice: '3. <script>' }, { choice: '4. <head>' }]
-    },
-    {
-        q: 'In the code -- setinterval(time(),1000) -- what is time()?',
-        a: '1. callback function',
-        choices: [{ choice: '1. callback function' }, { choice: '2. undefined' }, { choice: '3. variable' }, { choice: '4. all of the above' }]
-    },
-    {
-        q: 'What syntax would call a function?',
-        a: '4. function()',
-        choices: [{ choice: '1. var function' }, { choice: '2. function' }, { choice: '3. call function' }, { choice: '4. function()' }]
-    },
-    {
-        q: 'When did javascript first appear?',
-        a: '1. 1995',
-        choices: [{ choice: '1. 1995' }, { choice: '2. Roaring twenties' }, { choice: '3. 2005' }, { choice: '4. 2000' }]
-    },
-    {
-        q: 'What does DOM stand for?',
-        a: '2. Document Object Model',
-        choices: [{ choice: '1. Do Overnight Modules' }, { choice: '2. Document Object Model' }, { choice: '3. Divas Obviously Model' }, { choice: '4. Do Oo Mo' }]
-    },
-    {
-        q: 'What is getItem commonly used for?',
-        a: '2. local storage',
-        choices: [{ choice: '1. adding drama' }, { choice: '2. local storage' }, { choice: '3. online shopping' }, { choice: '4. naming a variable' }]
-    },
-];
-
 //if go back button is hit on high score page
 var renderStartPage = function () {
     containerHighScoresEl.classList.add("hide")
@@ -593,38 +552,6 @@ var loadHighScore = function () {
     }
 }
 
-//display high score screen from link or when intiials entered
-var displayHighScores = function () {
-
-    containerHighScoresEl.classList.remove("hide");
-    containerHighScoresEl.classList.add("show");
-    gameover = "true"
-
-    if (containerEndEl.className = "show") {
-        containerEndEl.classList.remove("show");
-        containerEndEl.classList.add("hide");
-    }
-    if (containerStartEl.className = "show") {
-        containerStartEl.classList.remove("show");
-        containerStartEl.classList.add("hide");
-    }
-
-    if (containerQuestionEl.className = "show") {
-        containerQuestionEl.classList.remove("show");
-        containerQuestionEl.classList.add("hide");
-    }
-
-    if (correctEl.className = "show") {
-        correctEl.classList.remove("show");
-        correctEl.classList.add("hide");
-    }
-
-    if (wrongEl.className = "show") {
-        wrongEl.classList.remove("show");
-        wrongEl.classList.add("hide");
-    }
-
-}
 //clears high scores
 var clearScores = function () {
     HighScores = [];
@@ -641,7 +568,7 @@ loadHighScore()
 
 //on start click, start game
 btnStartEl.addEventListener("click", startGame)
-//on submit button -- enter or click
+//on submit button - enter or click
 formInitials.addEventListener("submit", createHighScore)
 //when view high-scores is clicked
 ViewHighScoreEl.addEventListener("click", displayHighScores)
