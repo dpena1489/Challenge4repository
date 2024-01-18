@@ -2,19 +2,15 @@
 Challenge 4 Code Quiz
 04 Web APIs: Code Quiz
 
-User Story
+#User Story
+
 Created a Quiz with a timer:
 
 Start quiz while timer is running
-# Timmer will be coounting down 
-# Keep track of high scores or reset high scores 
 
-
-
-
-
-
-
+Timmer will be coounting down 
+ 
+Keep track of high scores or reset high scores 
 
 Acceptance Criteria
 
