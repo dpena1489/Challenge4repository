@@ -6,8 +6,8 @@ User Story
 Created a Quiz with a timer:
 
 Start quiz while timer is running
-#Timmer will be coounting down 
-#Keep track of high scores or reset high scores 
+# Timmer will be coounting down 
+# Keep track of high scores or reset high scores 
 
 
 
