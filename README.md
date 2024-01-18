@@ -12,6 +12,9 @@ Timmer will be coounting down
  
 Keep track of high scores or reset high scores 
 
+![image](https://github.com/dpena1489/Challenge4repository/assets/150938385/7dbfd8d3-47c7-48fe-92cb-a7ab824c72d1)
+
+
 Acceptance Criteria
 
 GIVEN I am taking a code quiz
