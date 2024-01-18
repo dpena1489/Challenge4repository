@@ -112,7 +112,7 @@ var renderStartPage = function () {
     }
 }
 
-//every second, check if game-over is true, or if there is time left. Then Start time at 30 
+//every second, check if game-over is true, or if there is time left. Then Start time at 60
 var setTime = function () {
     timeleft = 30;
 
