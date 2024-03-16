@@ -1,6 +1,6 @@
-# Challenge4repository
-Challenge 4 Code Quiz
-04 Web APIs: Code Quiz
+# Code Quiz
+
+Challenge 04 Web APIs: Code Quiz
 
 #User Story
 
